@@ -1,4 +1,4 @@
-# PropVista
+# PropVista 
 
 PropVista is a smart real estate analytics and recommendation web app built with Streamlit. It helps users estimate property prices, explore market trends, and discover similar apartments through machine learning and interactive visualizations.
 
