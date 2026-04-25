@@ -1,5 +1,8 @@
 .venv/
 .venv-1/
+.venv-run/
+.venv313-run/
+.tmp/
 __pycache__/
 *.pyc
 .vscode/
