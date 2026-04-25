@@ -2,6 +2,10 @@
 
 PropVista is a smart real estate analytics and recommendation web app built with Streamlit. It helps users estimate property prices, explore market trends, and discover similar apartments through machine learning and interactive visualizations.
 
+## Live App
+
+View the deployed app: https://ayush-yash-propvista.streamlit.app/
+
 ## Features
 
 - **Price Predictor**: Estimate property prices using property type, sector, area, bedrooms, bathrooms, furnishing, luxury category, and more.
