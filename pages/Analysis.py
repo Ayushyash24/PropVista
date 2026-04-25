@@ -15,7 +15,7 @@ apply_app_style()
 
 page_hero(
     "🏠 Market Analytics",
-    "Explore Gurgaon real estate patterns across sectors, BHK demand, luxury scores, furnishing impact, and pricing trends.",
+    "Explore real estate patterns across sectors, BHK demand, luxury scores, furnishing impact, and pricing trends.",
 )
 
 # ── Load Data ───────────────────────────────────────────────

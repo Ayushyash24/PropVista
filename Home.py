@@ -8,14 +8,14 @@ apply_app_style()
 
 page_hero(
     "🏠 PropVista",
-    "A smarter way to explore Gurgaon real estate with price prediction, market analytics, and apartment recommendations.",
+    "A smarter way to explore real estate with price prediction, market analytics, and apartment recommendations.",
     "Smart Real Estate Insights",
 )
 
 metric_col1, metric_col2, metric_col3 = st.columns(3)
 
 with metric_col1:
-    st.metric("Market Focus", "Gurgaon")
+    st.metric("Market Focus", "Real Estate")
 
 with metric_col2:
     st.metric("Core Tools", "3")
@@ -38,7 +38,7 @@ with col1:
 with col2:
     feature_card(
         "📊 Market Analytics",
-        "Compare sector pricing, BHK demand, luxury impact, furnishing premium, and Gurgaon price trends visually.",
+        "Compare sector pricing, BHK demand, luxury impact, furnishing premium, and price trends visually.",
     )
 
 with col3:

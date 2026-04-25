@@ -12,7 +12,7 @@ apply_app_style()
 
 page_hero(
     "🏠 Price Predictor",
-    "Estimate Gurgaon property prices from location, area, rooms, furnishing, luxury category, and floor profile.",
+    "Estimate property prices from location, area, rooms, furnishing, luxury category, and floor profile.",
 )
 
 # ============================================================================
@@ -77,7 +77,7 @@ property_type = st.sidebar.selectbox(
 sector = st.sidebar.selectbox(
     'Sector',
     options=sorted(df_reference['sector'].unique().tolist()),
-    help="Select the sector in Gurgaon"
+    help="Select the sector"
 )
 
 # Bedrooms
@@ -253,7 +253,7 @@ with st.expander("ℹ️ About This Model"):
     **Model Details:**
     - Type: Scikit-learn Pipeline with preprocessing
     - Algorithm: Gradient Boosting / XGBoost
-    - Training Data: Gurgaon real estate market
+    - Training Data: Real estate market
     - Target: Property price (log-transformed)
     
     **How it works:**
@@ -291,4 +291,4 @@ with st.expander("⚠️ Troubleshooting"):
     """)
 
 st.divider()
-st.caption("🏠 Real Estate Price Predictor | Gurgaon Market Analysis")
+st.caption("🏠 Real Estate Price Predictor | Market Analysis")

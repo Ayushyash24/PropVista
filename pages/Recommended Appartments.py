@@ -11,7 +11,7 @@ apply_app_style()
 
 page_hero(
     "🏠 Apartment Recommendations",
-    "Find nearby Gurgaon apartments by location and radius, then compare similar properties from the recommendation model.",
+    "Find nearby apartments by location and radius, then compare similar properties from the recommendation model.",
 )
 
 location_df = pd.read_pickle('datasets/location_distance.pkl')
