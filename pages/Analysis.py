@@ -7,7 +7,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from app_style import apply_app_style, page_hero
+from app_style import app_footer, apply_app_style, page_hero
 
 
 st.set_page_config(page_title="PropVista Analytics", page_icon="🏠", layout="wide")
@@ -380,3 +380,5 @@ if len(age_df) > 0:
         },
     )
     st.plotly_chart(fig_age, use_container_width=True)
+
+app_footer()
