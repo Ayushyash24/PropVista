@@ -1,6 +1,10 @@
 import streamlit as st
 
 
+GITHUB_USERNAME = "Ayushyash24"
+DEVELOPER_NAME = "Ayush Yash Dwivedi"
+
+
 def apply_app_style() -> None:
     st.markdown(
         """
@@ -143,6 +147,52 @@ def apply_app_style() -> None:
         .stAlert {
             border-radius: 12px;
         }
+
+        .developer-footer {
+            margin: 3rem 0 0;
+            padding: 1.25rem 0 0;
+            border-top: 1px solid var(--line);
+        }
+
+        .developer-footer__inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.85rem;
+            color: var(--muted);
+            text-align: left;
+        }
+
+        .developer-footer__avatar {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+            box-shadow: 0 8px 20px rgba(15, 79, 99, 0.18);
+            object-fit: cover;
+            background: #ffffff;
+        }
+
+        .developer-footer__label {
+            margin: 0;
+            font-size: 0.86rem;
+            line-height: 1.25;
+        }
+
+        .developer-footer__name {
+            margin: 0.15rem 0 0;
+            color: var(--brand-dark);
+            font-size: 1rem;
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        @media (max-width: 640px) {
+            .developer-footer__inner {
+                text-align: center;
+                flex-direction: column;
+            }
+        }
         </style>
         """,
         unsafe_allow_html=True,
@@ -169,6 +219,30 @@ def feature_card(title: str, description: str) -> None:
             <h3>{title}</h3>
             <p>{description}</p>
         </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def app_footer() -> None:
+    avatar_url = f"https://github.com/{GITHUB_USERNAME}.png"
+    profile_url = f"https://github.com/{GITHUB_USERNAME}"
+
+    st.markdown(
+        f"""
+        <footer class="developer-footer">
+            <a class="developer-footer__inner" href="{profile_url}" target="_blank" rel="noopener noreferrer">
+                <img
+                    class="developer-footer__avatar"
+                    src="{avatar_url}"
+                    alt="{DEVELOPER_NAME} GitHub profile picture"
+                />
+                <div>
+                    <p class="developer-footer__label">Developed by</p>
+                    <p class="developer-footer__name">{DEVELOPER_NAME}</p>
+                </div>
+            </a>
+        </footer>
         """,
         unsafe_allow_html=True,
     )
